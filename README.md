@@ -12,6 +12,20 @@ Think of it as LEGO blocks for developers, but instead of building a castle, you
 
 ## 🧩 The Wires (Modules)
 
+### ⚡ **Core Wire**
+
+The essential npm package that powers all other wires. Think of it as the flux capacitor that makes everything else work:
+
+- 🗄️ Database operations (the backbone of any app)
+- 🔐 Crypto functions (hashing, encryption, digital signatures)
+- 🛠️ Utility functions (shared helpers and common operations)
+- 📊 Data validation (ensuring your data is as reliable as Doc's calculations)
+- 🔧 Configuration management (centralized settings for all wires)
+- 📝 Logging and monitoring (because even time machines need maintenance)
+- 🌐 HTTP client utilities (for when wires need to talk to each other)
+
+*This is the only wire that's an npm package - all others are REST APIs that import and use the Core Wire.*
+
 ### 🔐 **Auth Wire**
 
 Everything you need to handle users without losing your sanity:
