@@ -1,0 +1,26 @@
+{
+  "name": "landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "serve -s . -l 3000",
+    "dev": "serve -s . -l 3000 --live",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fluxkitdev/landing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/fluxkitdev/landing/issues"
+  },
+  "homepage": "https://github.com/fluxkitdev/landing#readme",
+  "devDependencies": {
+    "serve": "^14.2.5"
+  }
+}
