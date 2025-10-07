@@ -24,7 +24,7 @@ The essential npm package that powers all other wires. Think of it as the flux c
 - 📝 Logging and monitoring (because even time machines need maintenance)
 - 🌐 HTTP client utilities (for when wires need to talk to each other)
 
-*This is the only wire that's an npm package - all others are REST APIs that import and use the Core Wire.*
+*All wires are available as both npm packages (for embedding in your project) and REST APIs (for server endpoints).*
 
 ### 🔐 **Auth Wire**
 
@@ -78,7 +78,29 @@ React components that don't make you want to time travel back to before you star
 
 ## 🚀 How It Works
 
-Everything (except UI) is a **REST API** that you can call from anywhere. It's like having a Swiss Army knife, but for your backend infrastructure.
+Each wire is available in **two flavors**:
+
+### 📦 **NPM Package Mode**
+```bash
+npm install @fluxkit/auth
+npm install @fluxkit/messaging
+npm install @fluxkit/store
+# ... and so on
+```
+
+Embed any wire directly into your project for maximum control and performance.
+
+### 🌐 **REST API Mode**
+```bash
+curl https://api.fluxkit.dev/auth/login
+curl https://api.fluxkit.dev/messaging/send
+curl https://api.fluxkit.dev/store/upload
+# ... and so on
+```
+
+Use wires as server endpoints for microservices architecture or when you want to keep your main app lightweight.
+
+**Choose your adventure!** Use npm packages for tight integration, or REST APIs for distributed systems. It's like having both a DeLorean AND a hoverboard - use whichever gets you where you need to go! 🚗💨
 
 ### 🔬 Experimental: MCP Support
 
